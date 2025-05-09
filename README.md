@@ -6,7 +6,7 @@
 ### build docker image from Docker file
 ```docker build -t feedback-form .```
 ### create docker container from docker image
-docker run -d -p 3000:3000
+```docker run -d -p 3000:3000```
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -14,8 +14,8 @@ docker run -d -p 3000:3000
 
 ### install node and npm
 ### initialize node
-npm init
+```npm init```
 ### install dependencies
-npm install
+```npm install```
 ### run the server
-npm start server.js
+```npm start server.js```

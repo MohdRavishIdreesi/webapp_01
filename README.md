@@ -9,7 +9,7 @@ docker build -t feedback-form .
 ## create docker container from docker image
 docker run -d -p 3000:3000
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # Method 2: Run the application without docker
 

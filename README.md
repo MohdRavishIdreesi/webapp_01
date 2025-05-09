@@ -1,4 +1,4 @@
-# THis is a project to test the DevOps Tools
+# This is a project to test the DevOps Tools
 
 # Method 1: Run the application using docker
 

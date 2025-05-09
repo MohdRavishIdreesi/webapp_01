@@ -9,9 +9,9 @@ docker build -t feedback-form .
 ## create docker container from docker image
 docker run -d -p 3000:3000
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-# Method 1: Run the application without docker
+# Method 2: Run the application without docker
 
 ## install node and npm
 ## initialize node

@@ -1,11 +1,23 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  app:
-    build: .
-    container_name: feedback-form
+
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: feedback_form
     ports:
       - "3000:3000"
     volumes:
-      - .:/app
+      - feedback_form_volume:/app
     restart: always
+    networks:
+      - feedback_form_network
+
+volumes:
+  feedback_form_volume:
+
+networks:
+  feedback_form_network:
+    driver: bridge

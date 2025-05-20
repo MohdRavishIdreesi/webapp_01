@@ -9,14 +9,9 @@ services:
     container_name: feedback_form
     ports:
       - "3000:3000"
-    volumes:
-      - feedback_form_volume:/app
     restart: always
     networks:
       - feedback_form_network
-
-volumes:
-  feedback_form_volume:
 
 networks:
   feedback_form_network:

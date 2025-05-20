@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("CODE") {
             steps {
-                echo "This is to clone the project on server"
+                echo "This is to clone the project on server from git"
                 git url: "https://github.com/MohdRavishIdreesi/webapp_01.git", branch: "main"
             }
         }

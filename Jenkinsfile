@@ -12,6 +12,7 @@ pipeline {
         stage("BUILD") {
             steps {
                 echo "This is for building the project docker instances using docker-compose"
+                sh "docker-compose down"
                 sh "docker-compose build"
             }
         }
@@ -19,7 +20,6 @@ pipeline {
         stage("DEPLOY") {
             steps {
                 echo "This is for deploying the project docker instances using docker-compose"
-                sh "docker-compose down"
                 sh "docker-compose up -d"
             }
         }
